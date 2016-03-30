@@ -1,7 +1,5 @@
 <div class="container">
   {{#each model as |post|}}
-  <h3>{{post.title}} by {{post.author}}</h3>
-  <p>{{post.content}}</p>
-  <p><img src="{{post.image}}"/></p>
+    {{post-tile post=post destroyPost = "destroyPost"}}
   {{/each}}
 </div>
