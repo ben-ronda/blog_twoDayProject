@@ -1,7 +1,7 @@
 <div class="jumbotron">
   {{#link-to 'index'}}<h1>The Blog to End Blogs</h1>{{/link-to}}
 </div>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -16,5 +16,6 @@
   </div>
 </nav>
 
-
-{{outlet}}
+<div class="container">  
+  {{outlet}}
+</div>

@@ -1,4 +1,8 @@
-<h3>{{post.title}} by {{post.author}}</h3>
-<p>{{post.content}}</p>
-<p><img src="{{post.image}}"/></p>
-<button {{action 'delete' rental}} class="btn btn-info">Delete</button>
+
+<div id="post">
+  <h3>{{post.title}} by {{post.author}}</h3>
+  <p>{{post.content}}</p>
+  <p><img src="{{post.image}}"/></p>
+  {{update-post post=post update="update"}}
+  <button {{action 'delete' post}} class="btn btn-danger">Delete</button>
+</div>
