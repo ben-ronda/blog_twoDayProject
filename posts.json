@@ -1,0 +1,7 @@
+{ "posts": [{
+    "title": "First Post",
+    "author": "Jon Snow",
+    "content": "This is the first post on the blog!",
+    "image": "http://media.mydogspace.com.s3.amazonaws.com/wp-content/uploads/2013/08/puppy-500x350.jpg"
+  }]
+}
