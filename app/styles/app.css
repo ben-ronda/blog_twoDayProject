@@ -1,0 +1,12 @@
+.jumbotron a:hover{
+  text-decoration: none;
+}
+.jumbotron a:active{
+  text-decoration: none;
+}
+.jumbotron a:link{
+  text-decoration: none;
+}
+.jumbotron a:visited{
+  text-decoration: none;
+}
