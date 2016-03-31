@@ -1,3 +1,10 @@
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  margin: 20px;
+}
+ body{
+   background-color: #d7e5f0;
+ }
 .jumbotron a:hover{
   text-decoration: none;
 }
@@ -21,4 +28,8 @@
 
 #post img {
   width:300px;
+}
+
+#detail {
+  width: 500px;
 }
