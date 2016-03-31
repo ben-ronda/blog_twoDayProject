@@ -14,6 +14,8 @@ export default Ember.Component.extend({
       post: this.get('post')
     };
     this.set('addNewComment', false);
+    this.set('name', "");
+    this.set('detail', "");
     this.sendAction('commentSave2', commentParams);
     }
   }
