@@ -1,8 +1,7 @@
 
 <div id="post">
-  <h3>{{post.title}} by {{post.author}}</h3>
+  <h3>{{#link-to 'post' post.id}}{{post.title}} by {{post.author}}{{/link-to}}</h3>
   <p>{{post.content}}</p>
   <p><img src="{{post.image}}"/></p>
   {{update-post post=post update="update"}}
-  <button {{action 'delete' post}} class="btn btn-danger">Delete</button>
 </div>
