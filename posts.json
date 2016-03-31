@@ -13,5 +13,12 @@
     "author": "Jon No",
     "content": "This is the third post on the blog!",
     "image": "http://www.puppyfind.com/breed/old_english_sheepdog/m_415007.jpg"
+  }],
+  "comments": [{
+    "name": "Joe Bob",
+    "detail": "Dogs rule, I love dogs"
+  }, {
+    "name": "John Joe Smith",
+    "detail": "I don't know why this blog has so many dog posts"
   }]
 }

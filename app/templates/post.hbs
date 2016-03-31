@@ -1,5 +1,13 @@
-<h2>More information about {{model.author}} - {{model.title}}</h2>
+<h2>Blog Post By {{model.author}} - {{model.title}}</h2>
 
 {{update-post post=model update="update"}}
 
 {{post-detail post=model destroyPost="destroyPost"}}
+
+{{new-comment commentSave2="commentSave3" post=model}}
+
+<ul>
+  {{#each model.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>

@@ -17,6 +17,17 @@ export default Ember.Route.extend({
     destroyPost(post) {
       post.destroyRecord();
       this.transitionTo('index');
+    },
+    commentSave3(commentParams){
+      console.log(commentParams);
+      var newComment = this.store.createRecord('comment', commentParams);
+      console.log(commentParams.post);
+      var post = commentParams.post;
+      post.get('comments').addObject(newComment);
+      newComment.save().then(function(){
+        return post.save();
+      });
+      this.transitionTo('post', commentParams.post);
     }
   }
 });
